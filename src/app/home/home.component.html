@@ -27,10 +27,27 @@
 
     <label for="name" id="labelStyle" class="labelStyle">Significant Other</label>
     <input type="text" id="name" class="inputStyle bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
-    <img class="sendStyle" src="/icons/send.png" alt="">
+    <img class="sendStyle" (click)="api()" src="/icons/send.png" alt="">
 </div>
 
+
+
 </section>
+
+<div id="containerPoem" class="containerPoem">
+
+    <div class="containerItems" style="position: relative;">
+
+        <img class="closeStyle" (click)="close()" src="/icons/close.png" alt="">
+
+        <h1 class="personName" id="personName"></h1>
+
+        <p class="poemStyle" id="poem"></p>
+
+    </div>
+
+
+</div>
 
 
 <app-footer></app-footer>

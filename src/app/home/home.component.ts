@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -35,6 +36,7 @@ export class HomeComponent implements OnInit {
 
   }
 
+  private http = inject(HttpClient)
   start() {
 
     const play:any = document.getElementById('play')
@@ -52,6 +54,45 @@ export class HomeComponent implements OnInit {
      
 
     }, 1000);
+
+
+
+  }
+
+  data:any
+  api() {
+
+    const name:any = document.getElementById('name')
+    const containerPoem:any = document.getElementById('containerPoem')
+    const personName:any = document.getElementById('personName')
+    const poemText:any = document.getElementById('poem')
+
+    let poem = ""
+    this.http.get('https://poetrydb.org/author,title/Shakespeare;Sonnet').subscribe(config => {
+      
+      console.log(config)
+
+      this.data = config
+
+      const random = Math.floor(Math.random() * 153)
+
+      poem = this.data[random]['lines']
+
+      personName.innerHTML = name.value
+      containerPoem.style.display = "flex"
+      poemText.innerHTML = poem
+
+      console.log(poem)
+
+    });
+
+
+
+  }
+
+  close() {
+
+    window.location.reload()
 
   }
 

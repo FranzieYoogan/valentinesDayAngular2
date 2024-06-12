@@ -82,3 +82,101 @@
     bottom: 20%;
     cursor: pointer;
 }
+
+.containerPoem {
+
+
+    display: none;
+    justify-content: center;
+    position: relative;
+}
+
+.containerItems {
+
+    width: 350px !important;
+    position: fixed !important;
+    bottom: 25% !important;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #d03177;
+    padding: 10px;
+
+}
+
+
+@media only screen and (width: 320px) {
+    .containerItems {
+
+        width: 250px !important;
+        position: fixed;
+        bottom: 35%;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: #d03177;
+        padding: 10px;
+    
+    }
+
+    .poemStyle {
+
+        font-style: italic;
+        color: white;
+        font-size: 8px !important;
+        font-weight: 900;
+    
+    }
+
+
+  }
+
+
+  @media only screen and (width: 571px) {
+    .containerItems {
+
+        width: 250px !important;
+        position: fixed;
+        bottom: 18%;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: #d03177;
+        padding: 10px;
+    
+    }
+
+    .poemStyle {
+
+        font-style: italic;
+        color: white;
+        font-size: 10px !important;
+        font-weight: 900;
+    
+    }
+
+
+  }
+  
+
+  .closeStyle {
+
+    width: 30px;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+  }
+
+.personName {
+
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+
+}
+
+.poemStyle {
+
+    font-style: italic;
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+
+}
