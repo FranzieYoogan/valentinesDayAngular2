@@ -64,6 +64,7 @@ export class HomeComponent implements OnInit {
 
     const name:any = document.getElementById('name')
     const containerPoem:any = document.getElementById('containerPoem')
+    const hearts:any = document.getElementById('hearts')
     const personName:any = document.getElementById('personName')
     const poemText:any = document.getElementById('poem')
 
@@ -78,11 +79,18 @@ export class HomeComponent implements OnInit {
 
       poem = this.data[random]['lines']
 
-      personName.innerHTML = name.value
+      personName.innerHTML = `To ${name.value.toLowerCase()}`
       containerPoem.style.display = "flex"
       poemText.innerHTML = poem
 
       console.log(poem)
+
+      if(personName.innerHTML == "To clarissa") {
+
+        hearts.style.display = "flex"
+
+      }
+
 
     });
 

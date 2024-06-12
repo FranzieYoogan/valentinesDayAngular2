@@ -195,3 +195,76 @@
 
     cursor: pointer ;
   }
+
+  .hearts {
+
+    position: absolute;
+    top: -30em !important;
+    width: 100% !important;
+    display: none;
+    justify-content: center;
+  }
+
+  @media only screen and (width: 400px) {
+    .hearts {
+
+        position: absolute;
+        top: 3em !important;
+        width: 100% !important;
+        
+        z-index: 60 !important;
+        overflow: hidden !important;
+      }
+  }
+
+  @media only screen and (width: 425px) {
+    .hearts {
+
+        position: absolute;
+        top: 3em !important;
+        width: 100% !important;
+        z-index: 60 !important
+     
+    
+      }
+  }
+
+  @media only screen and (width: 375px) {
+    .hearts {
+
+        position: absolute;
+        top: 3em !important;
+        width: 100% !important;
+        z-index: 60 !important
+     
+    
+      }
+  }
+
+  @media only screen and (width: 320px) {
+    .hearts {
+
+        position: absolute;
+        top: 5em !important;
+        width: 100% !important;
+        z-index: 60 !important
+
+    
+      }
+  }
+
+  @media only screen and (width: 768px) {
+    .hearts {
+
+        position: absolute;
+        top: 0em !important;
+        width: 100% !important;
+        z-index: 60 !important
+
+    
+      }
+  }
+
+
+
+  
