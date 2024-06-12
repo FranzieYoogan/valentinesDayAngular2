@@ -1,0 +1,84 @@
+.containerAll {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.cupidStyle {
+
+    width: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 0px 1px black;
+}
+
+.playStyle {
+
+    width: 30px;
+    border: 1px solid #d03177;
+    border-radius: 40px;
+    padding: 5px;
+    background-color: black;
+}
+
+.buttonPlay {
+    
+   display: flex;
+   font-weight: 900;
+   color: white;
+   text-shadow: 2px 2px 2px black;
+   gap: 0.5em;
+    font-size: 20px;
+}
+
+.inputStyle {
+
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.inputStyle:hover, .inputStyle:active, .inputStyle:focus {
+
+    border-bottom: 1px solid white;
+    box-shadow: none;
+
+}
+
+.labelStyle {
+
+    position: absolute;
+    font-style: 15px;
+    text-shadow: 2px 2px 2px transparent;
+    transition: 1s;
+    top: 0.8em;
+    color: white;
+}
+
+.containerInput {
+
+    margin-top: 1em;
+    display: none;
+    justify-content: center;
+    opacity: 0;
+
+}
+
+.containerInputAll {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.sendStyle {
+
+    width: 25px;
+    position: absolute;
+    left: 90%;
+    bottom: 20%;
+    cursor: pointer;
+}
