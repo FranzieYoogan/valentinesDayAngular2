@@ -95,7 +95,7 @@
 
     width: 350px !important;
     position: fixed !important;
-    bottom: 25% !important;
+    bottom: 10em !important;
     border: 2px solid white;
     border-radius: 10px;
     background-color: #d03177;
@@ -126,8 +126,18 @@
     
     }
 
+    .closeStyle {
+
+        width: 20px !important;
+        position: absolute;
+        left: 90% ;
+    
+        cursor: pointer ;
+      }
+
 
   }
+
 
 
   @media only screen and (width: 571px) {
@@ -152,17 +162,13 @@
     
     }
 
+ 
 
   }
-  
 
-  .closeStyle {
 
-    width: 30px;
-    position: absolute;
-    left: 90%;
-    cursor: pointer;
-  }
+
+
 
 .personName {
 
@@ -180,3 +186,12 @@
     font-weight: 900;
 
 }
+
+.closeStyle {
+
+    width: 25px ;
+    position: absolute;
+    left: 90% ;
+
+    cursor: pointer ;
+  }
